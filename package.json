@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/redshoga/httple.git"
   },
+  "files": [
+    "README.md",
+    "httple.js",
+    "package.json"
+  ],
   "bugs": {
     "url": "https://github.com/redshoga/httple/issues"
   },
