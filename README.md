@@ -53,6 +53,13 @@ httple("GET", 3000, /^\/get$/, null, (req, res, json) => {
 })
 ```
 
+# Exec in Docker container
+
+```bash
+docker build -t redshoga/httple .
+docker run -it -v $(pwd):/share -p 3000:3000 redshoga/httple
+```
+
 # TODO
 
 - [ ] Add test
