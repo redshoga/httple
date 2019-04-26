@@ -26,10 +26,10 @@ JSON receive server
 ```javascript
 const httple = require("httple")
 
-httple("POST", 3000, /^\/post$/, {
+httple("POST", 3000, /^\/$/, {
   a: (v) => { return v.length > 0; },
   b: (v) => { return v.length > 1; },
-  c: (v) => { return v.length > 2; },
+  c: (v) => { return v.length > 3; },
 }, (req, res, json) => {
   console.log(json);
   res.writeHead(200, "Success");
@@ -44,8 +44,7 @@ Simple GET server
 ```javascript
 const httple = require("httple")
 
-httple("GET", 3000, /^\/get$/, null, (req, res, json) => {
-  console.log(json);
+httple("GET", 3000, /^\/$/, null, (req, res) => {
   res.writeHead(200, "Success");
   res.end();
 }, () => {

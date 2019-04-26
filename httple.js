@@ -27,9 +27,14 @@ const reqJsonToServerFunc = (jsonStr, validationObj, validationKeys, validationK
 
 const httple = (endpointMethod, portNumber, allowEndpointRegexp, validationObj, serverFunc, callbackFunc) => {
   endpointMethod = endpointMethod.toUpperCase();
-  const validationKeys = Object.keys(validationObj).sort();
-  const validationKeysStr = JSON.stringify(validationKeys);
 
+  let validationKeys;
+  let validationKeysStr;
+  if (!!validationObj) {
+    validationKeys = Object.keys(validationObj).sort();
+    validationKeysStr = JSON.stringify(validationKeys);
+  }
+  
   http.createServer((req, res) => {
     if (endpointMethod !== req.method) return badRequest(res, "Invalid method");
     if (!allowEndpointRegexp.test(req.url)) return badRequest(res, "Invalid endpoint");
