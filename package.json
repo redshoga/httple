@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/redshoga/httple.git"
   },
+  "bugs": {
+    "url": "https://github.com/redshoga/httple/issues"
+  },
   "keywords": [
     "http",
     "microservice",

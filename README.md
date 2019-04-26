@@ -6,7 +6,7 @@ The simple and minimal http wrapper for microservice
 
 # Usage
 
-```
+```javascript
 const httple = require("httple")
 
 httple(
@@ -23,7 +23,7 @@ httple(
 
 JSON receive server
 
-```
+```javascript
 const httple = require("httple")
 
 httple("POST", 3000, /^\/post$/, {
@@ -41,7 +41,7 @@ httple("POST", 3000, /^\/post$/, {
 
 Simple GET server
 
-```
+```javascript
 const httple = require("httple")
 
 httple("GET", 3000, /^\/get$/, null, (req, res, json) => {
