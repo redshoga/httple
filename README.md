@@ -55,10 +55,7 @@ httple("GET", 3000, /^\/get$/, null, (req, res, json) => {
 
 # Exec in Docker container
 
-```bash
-docker build -t redshoga/httple .
-docker run -it -v $(pwd):/share -p 3000:3000 redshoga/httple
-```
+[redshoga/httple\-docker\-sample: Sample docker container for simple http module](https://github.com/redshoga/httple-docker-sample)
 
 # TODO
 
