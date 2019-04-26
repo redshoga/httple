@@ -1,0 +1,17 @@
+{
+  "name": "httple",
+  "version": "1.0.0",
+  "description": "The simple and minimal http wrapper for microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "microservice",
+    "minimal",
+    "simple"
+  ],
+  "author": "redshoga <yui.ichioka.contact@gmail.com> (https://redshoga.github.io/)",
+  "license": "MIT"
+}
